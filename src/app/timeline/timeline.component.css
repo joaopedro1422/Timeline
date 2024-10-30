@@ -1,0 +1,122 @@
+.line{
+    width: 3px;
+    height: 162px;
+    background-color: white;
+    
+}
+.line-horizontal{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+h4{
+    white-space:inherit;       /* Impede a quebra de linha */
+    overflow: hidden;          /* Oculta o conteúdo extra */
+    font-size: 15px;
+}
+.unidade-point{
+    display: flex;
+    
+    
+}
+
+img{ 
+    height: 80px; /* Defina a altura desejada */
+    width: 120px;
+    max-width: 120px; /* Defina a largura máxima */
+    border-radius: 6px;
+    object-fit: cover; /* Corta a imagem para preencher o espaço */
+    object-position:top-center; /* Centraliza a parte visível da imagem */
+    margin: 10px;
+}
+img:hover{
+    scale: 1.25;
+}
+
+.container-img{
+    display: flex; 
+    flex-direction: column; 
+     width: 140px;
+    max-width: 140px;
+    justify-items: center;
+    text-align: center; 
+    font-size: 18px;
+}
+
+
+
+.organizador{
+    background-color: rgba(196, 41, 41, 0);
+    width: 650px;
+    padding-left: 115px;
+    padding-right: 115px;
+    overflow-y: auto;
+}
+
+.body-point{
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.btn-add{
+    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 50px;
+    font-size: 30px;
+    width: 150px;
+    background-color: #dc00e4;
+    
+    border-color: transparent;
+    border-radius: 8px;
+}
+.btn-add:hover{
+    cursor: pointer;
+    background-color: #6a00e4;
+    transition: 1.5s;
+    scale: 1.02;
+}
+
+.data-container{
+   
+    width: 49%;
+    display: flex;
+    justify-content: end;
+}
+
+.line-container{
+   
+    width: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.details-container{
+    display: flex;
+   
+    align-items: center;
+    width: 49%;
+}
+
+.data-container2{
+   
+    width: 49%;
+    display: flex;
+    justify-content: start;
+}
+
+.line-container2{
+    
+    width: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.details-container2{
+    display: flex;
+    
+    align-items: center;
+    justify-content: end;
+    width: 49%;
+}

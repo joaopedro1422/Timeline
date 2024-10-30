@@ -1,0 +1,26 @@
+
+<div class="container-dialog">
+    <div class="container-header">
+        <h1>Ótimo, mais uma lembrança !</h1>
+        <div class="line-top"></div>
+    </div>
+    <div class="organizacao-form">
+        <form action="">
+            <span>O que fizemos nesse dia?</span>
+            <input type="text" placeholder="Título" class="input-dialog" [(ngModel)]="titulo" [ngModelOptions]="{standalone: true}">
+            <span>Quando foi? (xx/xx/xxxx)</span>
+            <input type="text" placeholder="Data"  class="input-dialog" [(ngModel)]="data" [ngModelOptions]="{standalone: true}">
+        </form>
+        <div class="file-upload">
+            <input type="file" id="fileInput" [(ngModel)]="imagem" [ngModelOptions]="{standalone: true}"  hidden (change)="onImageSelected($event)" />
+            <span>Uma fotinha pra lembrar</span>
+            <button type="button" class="custom-file-button" (click)="triggerFileInput()">Escolher Foto</button>
+          </div>
+    </div>
+    <div class="end-container">
+        <h4>Que possamos alimentar essa besteirinha pra sempre...</h4>
+        <button class="btn-salvar" (click) = "addPoint()">Salvar</button>
+    </div>
+    
+    
+</div>

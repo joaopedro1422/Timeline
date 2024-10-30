@@ -1,0 +1,43 @@
+<button class="btn-add" (click)="openDialog()"><i class="fas fa-plus"></i></button>
+<div class="organizador" *ngFor="let point of points; let i = index">
+    <div class="body-point" *ngIf="i % 2 ===0">
+            <div class="data-container">
+                <p style="margin: 8px;">  {{point.data}} </p>
+            </div>
+            <div class="line-container">
+                <div class="line"></div>
+            </div>
+            <div class="details-container">
+                <div class="line-horizontal"></div>
+                <div  class="container-img">
+                    <div style="width: 120px">
+                        <h4> {{point.titulo}} </h4>
+                    </div>
+                    <img [src]="point.imagem" alt="">
+                </div>
+            </div>
+            
+       
+    </div>
+    <div  class="body-point" *ngIf="i % 2 !==0">     
+        <div class="details-container2">
+            
+            <div  class="container-img">
+                <div style="width: 120px">
+                    <h4> {{point.titulo}} </h4>
+                </div>
+                <img [src]="point.imagem" alt="">
+            </div>
+            <div class="line-horizontal"></div>
+        </div>
+            <div class="line-container2">
+                <div class="line"></div>
+            </div>
+            <div class="data-container2">
+                <p style="margin: 8px;">  {{point.data}} </p>
+            </div>
+
+    </div>
+    
+</div>
+
